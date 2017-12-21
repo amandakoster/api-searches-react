@@ -9,8 +9,7 @@ class SearchResults extends React.Component{
     let articles = this.props.articles || [];
 
     return(
-      <ul>
-
+      <ul className="results">
         {articles.map( (item, i) =>
           <li key={i}>
             <a href= {item.data.url}>{item.data.title}</a>
