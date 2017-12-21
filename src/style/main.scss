@@ -1,4 +1,151 @@
-body {
-  background: ivory;
-  color: #555;
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato|Spectral');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
+
+input{
+  background: #fff;
+  border: none;
+  width: 10rem;
+  height: 1.5rem;
+  margin: 1rem;
+  border:none;
+  box-shadow : none !important;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #666 !important;
+}
+
+.App-header {
+height: 15%;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 50%;
+}
+
+.App-title {
+  font-family: 'TitlingGothicSkyline','Impact','Helvetica Neue','Helvetica',sans-serif;
+  font-size: 8vw;
+  text-align: center;
+  color:#333;
+}
+
+ul {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  margin: 5%;
+
+}
+
+.results {
+  text-overflow: ellipsis;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+li a {
+  text-decoration: none !important;
+  display: block;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+
+.results {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #FF7043;
+  padding: 1%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  list-style-type: none;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.results {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.results:hover
+{
+    box-shadow: 0px 0px 15px #777;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.author {
+  clear: left;
+  color: #555 !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+footer {
+  border-top: 1px dotted orange;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+// a:link {
+//   text-decoration: none;
+// }
+//
+// a:visited {
+//   text-decoration: none;
+// }
+//
+// a:hover {
+//   text-decoration: underline;
+// }
+//
+// a:active {
+//   text-decoration: underline;
+// }

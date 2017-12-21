@@ -2,6 +2,9 @@ import React from 'react';
 import superagent from 'superagent';
 import SearchResults from './SearchResults';
 import SearchForm from './SearchForm';
+import Header from './header';
+import Navbar from './navbar';
+import Footer from './footer';
 
 const API_URL = 'https://www.reddit.com/r';
 let renderIf = (test, component) => test ? component : undefined;
@@ -42,14 +45,17 @@ class App extends React.Component{
   render(){
     return(
       <main>
-        <h1>Collection of API Searches</h1>
+        <Header />
+        <Navbar />
         <SearchForm handleSearch={this.redditBoardFetch} />
 
-        {renderIf(this.state.resutls,
+        {renderIf(this.state.results,
           <SearchResults articles={this.state.results} />)}
 
         {renderIf(this.state.searchErrorMessage,
           <p>{this.searchErrorMessage}</p>)}
+
+        <Footer />
 
       </main>
     );
